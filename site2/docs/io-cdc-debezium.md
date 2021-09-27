@@ -221,7 +221,7 @@ You can use one of the following methods to create a configuration file. *decode
         database.dbname: "postgres"
         database.server.name: "dbserver1"
         schema.whitelist: "inventory"
-         "plugin.name": "pgoutput",
+         plugin.name: "pgoutput",
 
         ## PULSAR_SERVICE_URL_CONFIG
         pulsar.service.url: "pulsar://127.0.0.1:6650"
