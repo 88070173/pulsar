@@ -101,6 +101,10 @@ module.exports = {
   customFields: {
     githubUrl,
   },
+  // i18n: {
+  //   defaultLocale: "en",
+  //   locales: ["en", "zh"],
+  // },
   themeConfig: {
     navbar: {
       title: "",
@@ -115,12 +119,17 @@ module.exports = {
           position: "left",
           label: "Docs",
         },
+        { to: "/versions", label: "Versions", position: "left" },
         { to: "/blog", label: "Blog", position: "left" },
         {
           href: "https://github.com/apache/pulsar",
           label: "GitHub",
           position: "right",
         },
+        // {
+        //   type: "localeDropdown",
+        //   position: "left",
+        // },
         {
           label: "Version",
           to: "docs",
@@ -137,6 +146,22 @@ module.exports = {
             {
               label: "2.7.2",
               to: "docs/2.7.2/",
+            },
+            {
+              label: "2.7.1",
+              to: "docs/2.7.1/",
+            },
+            {
+              label: "2.7.0",
+              to: "docs/2.7.0/",
+            },
+            {
+              label: "2.6.4",
+              to: "docs/2.6.4/",
+            },
+            {
+              label: "2.6.3",
+              to: "docs/2.6.3/",
             },
             {
               label: "2.2.0",

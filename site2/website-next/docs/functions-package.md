@@ -4,10 +4,6 @@ title: Package Pulsar Functions
 sidebar_label: "How-to: Package"
 ---
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-
-
 You can package Pulsar functions in Java, Python, and Go. Packaging the window function in Java is the same as [packaging a function in Java](#java).
 
 :::note
@@ -244,7 +240,7 @@ To package a function with **one python file** in Python, complete the following
    ```bash
    
    ./bin/pulsar-admin functions localrun \
-   --classname org.example.test.ExclamationFunction \
+   --classname <Python Function file name>.<Python Function class name> \
    --py <path of Python Function file> \
    --inputs persistent://public/default/my-topic-1 \
    --output persistent://public/default/test-1 \
